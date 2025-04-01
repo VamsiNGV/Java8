@@ -1,0 +1,12 @@
+name: Deploy Service
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    uses: VamsiNGV/Test/.github/workflows/common-ci.yml@main
+    # with:
+    #   service_name: "MyService"
